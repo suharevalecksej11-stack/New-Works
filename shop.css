@@ -1,0 +1,138 @@
+.catalog-menu {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 80px;
+    font-size: 13px;
+}
+
+.menu-column {
+    color: #999999;
+    cursor: pointer;
+}
+
+.menu-column.active {
+    color: #000000;
+}
+
+.menu-title {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.submenu {
+    list-style: none;
+}
+
+.submenu li {
+    margin-bottom: 8px;
+}
+
+.submenu li a {
+    color: #777777;
+    font-size: 12px;
+}
+
+.submenu li a:hover {
+    color: #000000;
+}
+
+.products-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+    flex-grow: 1;
+    margin-bottom: 40px;
+}
+
+.product-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.product-image {
+    width: 100%;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.product-name {
+    font-size: 11px;
+    font-weight: 400;
+    color: #555555;
+    letter-spacing: 0.5px;
+}
+
+.lamp-sketch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lamp-sketch .base {
+    width: 35px;
+    height: 3px;
+    background-color: #222;
+    border-radius: 2px;
+}
+
+.floor-lamp .shade {
+    width: 60px;
+    height: 12px;
+    background-color: #222;
+    border-radius: 30px 30px 0 0;
+}
+
+.floor-lamp .pole {
+    width: 2px;
+    height: 180px;
+    background-color: #222;
+}
+
+.mushroom-lamp .shade {
+    width: 55px;
+    height: 32px;
+    background-color: #ffffff;
+    border-radius: 50% 50% 45% 45%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.mushroom-lamp .pole {
+    width: 24px;
+    height: 25px;
+    background-color: #222;
+    border-radius: 4px;
+}
+
+.cone-lamp .shade {
+    width: 0;
+    height: 0;
+    border-left: 22px solid transparent;
+    border-right: 22px solid transparent;
+    border-bottom: 30px solid #222;
+}
+
+.cone-lamp .pole {
+    width: 2px;
+    height: 45px;
+    background-color: #222;
+}
+
+@media (max-width: 900px) {
+    .catalog-menu {
+        flex-wrap: wrap;
+    }
+
+    .products-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+}
